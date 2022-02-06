@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: gray;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="134.00000190734863" minWidth="10.0" prefWidth="131.0" />
+        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="28.0" minWidth="10.0" prefWidth="28.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="31.33333396911621" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="116.66666603088379" minHeight="10.0" prefHeight="109.66666603088379" valignment="CENTER" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="66.33333587646484" minHeight="10.0" prefHeight="11.33333396911621" valignment="CENTER" vgrow="SOMETIMES" />
+    </rowConstraints>
+    <children>
+        <VBox fx:id="linkInputLayout" alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="28.0" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding></VBox>
+        <VBox fx:id="linkOutputLayout" alignment="CENTER_RIGHT" prefHeight="171.0" prefWidth="28.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding></VBox>
+        <Separator opacity="0.0" prefWidth="200.0" GridPane.rowIndex="1" />
+        <Separator opacity="0.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Separator opacity="0.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Pane fx:id="contentContainer" prefHeight="110.0" prefWidth="131.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label fx:id="title" text="Title" GridPane.columnIndex="1">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+      <Button fx:id="deleteButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" style="-fx-background-color: transparent;" text="o" GridPane.columnIndex="2">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</GridPane>

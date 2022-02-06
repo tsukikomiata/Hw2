@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.imageeditor.HelloController">
+    <children>
+        <MenuBar layoutY="2.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <MenuItem mnemonicParsing="false" onAction="#saveImage" text="SaveImage"/>
+                    <MenuItem mnemonicParsing="false" onAction="#saveScene" text="SaveScene"/>
+                    <MenuItem mnemonicParsing="false" onAction="#loadScene" text="LoadScene"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Nodes">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#addImageNode" text="ImageNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addAddImageNode" text="AddImageNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addSepiaNode" text="SepiaNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addGrayFilterNode" text="GrayFilter"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addIntNode" text="IntNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addAddTextNode" text="AddTextNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addBlurNode" text="BlurFilter"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addStringNode" text="StringNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addMoveNode" text="TransformMove"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addScaleNode" text="TransformScale"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addRotateNode" text="TransformRotate"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addBrightnessNode" text="BrightnessFilter"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addFloatNode" text="FloatNode"/>
+                        <MenuItem mnemonicParsing="false" onAction="#addInvertFilterNode" text="InvertFilter"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>
